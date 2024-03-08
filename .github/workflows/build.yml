@@ -1,3 +1,15 @@
+plugins {
+  id "org.sonarqube" version "4.4.1.3373"
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "Carelle2908_springboot_gl"
+    property "sonar.organization", "carelle2908"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
+}
+
 name: SonarCloud
 on:
   push:
